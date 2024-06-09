@@ -35,7 +35,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
+            <div className="h-10vh lg:flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
                 <div className="flex items-center flex-1 font-bold">
                     <span className="text-2x1 font-bold text-black">Eduardo</span>
                     <span className="text-2x1 font-bold text-accent">.</span>

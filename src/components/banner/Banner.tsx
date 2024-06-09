@@ -11,8 +11,8 @@ const Banner = () => {
     })
 
     return (
-        <div data-aos="fade-up" className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
-            <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-black">
+        <div data-aos="fade-up" className="h-10vh lg:flex lg:max-xl:flex lg:justify-between z-50 text-white lg:py-5 lg:px-20 px-5 py-10 gap-10 flex-1">
+            <div className="h-full lg:py-40 lg:flex-col lg:justify-center justify-start items-start text-black">
                 <h3 className="text-2xl font-light mb-2">Hey, sou Eduardo👋🏼</h3>
                 <h1 className="text-7xl font-semibold leading-11"><span className="text-primary">Back</span>end</h1>
                 <h1 className="text-7xl font-semibold leading-11 mb-6">Developer</h1>
@@ -34,9 +34,9 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div className="w-90 content-center flex justify-center items-center">
-                <div className="w-100 h-100">
-                    <img src={img} className="rounded-full border-2 p-10 border-primary w-full h-full object-cover" alt="" />
+            <div className="w-90 lg:content-center flex justify-center items-center">
+                <div className="">
+                    <img src={img} className="rounded-full aspect-square border-2 p-10 border-primary w-full h-full object-cover" alt="" />
                 </div>
             </div>
 

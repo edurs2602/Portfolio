@@ -2,12 +2,12 @@ import { Timeline, TimelineBody, TimelineConnector, TimelineHeader, TimelineIcon
 
 const Exp = () => {
     return (
-        <div data-aos="fade-down" className="h-10vh flex justify-between gap-16 items-start z-50 text-white lg:py-5 px-20 py-4 flex-1 mb-40">
+        <div data-aos="fade-down" className="h-10vh lg:flex lg:max-xl:flex lg:justify-between lg:gap-16 items-start z-50 text-white lg:py-5 lg:px-20 px-5 py-10 flex-1 lg:mb-40">
             
-            <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-black">
+            <div className="h-full lg:py-40 py-20 flex flex-col justify-start lg:justify-center items-start text-black">
                 <h1 className="text-5xl font-semibold leading-11"><span className="text-black">Experiencias</span></h1>
                 <h1 className="text-5xl font-semibold leading-11 mb-10 text-primary">Profisionais</h1>
-                <div className="w-[32rem]">
+                <div className="lg:w-[32rem]">
                     <Timeline>
                         <TimelineItem>
                         <TimelineConnector />
@@ -41,10 +41,10 @@ const Exp = () => {
                 </div>
             </div>
 
-            <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-black">
+            <div className="h-full lg:py-40 flex flex-col lg:justify-center items-start text-black">
                 <h1 className="text-5xl font-semibold leading-11"><span className="text-black">Experiencias</span></h1>
                 <h1 className="text-5xl font-semibold leading-11 mb-10 text-primary">Academicas</h1>
-                <div className="w-[32rem]">
+                <div className="lg:w-[32rem]">
                     
                 <Timeline>
                         <TimelineItem>

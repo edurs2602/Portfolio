@@ -11,7 +11,7 @@ import Footer from "./components/footer/Footer"
 function App() {
 
   return (
-    <div className="bg-white px-60">
+    <div className="bg-white pr-0 lg:px-60">
       <div className="">
         <Nav/>
       </div>

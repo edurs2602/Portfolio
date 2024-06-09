@@ -17,7 +17,7 @@ const Nav = () => {
                 <Link spy={true} smooth={true} to="About">
                     <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Sobre</li>
                 </Link>
-                <Link spy={true} smooth={true} to="About">
+                <Link spy={true} smooth={true} to="Exp">
                     <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Experiencias</li>
                 </Link>
                 <Link spy={true} smooth={true} to="Projects">
@@ -49,7 +49,7 @@ const Nav = () => {
                             <Link spy={true} smooth={true} to="About">
                                 <li className="hover:text-primary text-zinc-800 transition cursor-pointer">Sobre</li>
                             </Link>
-                            <Link spy={true} smooth={true} to="About">
+                            <Link spy={true} smooth={true} to="Exp">
                                 <li className="hover:text-primary text-zinc-800 transition cursor-pointer">Experiencias</li>
                             </Link>
                             <Link spy={true} smooth={true} to="Projects">

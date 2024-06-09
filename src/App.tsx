@@ -15,22 +15,22 @@ function App() {
       <div className="">
         <Nav/>
       </div>
-      <div className="">
+      <div id="Home" className="">
         <Banner/>
       </div>
-      <div className="">
+      <div id="About" className="">
         <About/>
       </div>
-      <div className="">
+      <div id="Exp" className="">
         <Exp/>
       </div>
-      <div className="">
+      <div id="Projects" className="">
         <Projects/>
       </div>
-      <div className="">
+      <div id="Skills" className="">
         <Skills/>
       </div>
-      <div className="">
+      <div id="Contact" className="">
         <Contact/>
       </div>
       <div className="">

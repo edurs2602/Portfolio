@@ -5,8 +5,6 @@ import bookImg from "../../assets/book.jpeg"
 import { Button, Carousel, Typography } from "@material-tailwind/react";
 
 const Projects = () => {
-    const next = () => {}
-    const previous = () => {}
 
     return (
         <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1 gap-16 mb-40">

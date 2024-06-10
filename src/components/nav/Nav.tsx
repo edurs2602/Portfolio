@@ -9,8 +9,8 @@ const Nav = () => {
     const handleClick = () => setClick(!click);
 
     const content = <>
-        <div className="lg:hidden block absolute top-16 w-full left-0 bg-slate-900 transition">
-            <ul className="text-center text-xl p-20">
+        <div className="lg:hidden flex relative top-16 left-0 items-end justify-between right-0 transition">
+            <ul className="text-center text-xl p-20 pt-0">
                 <Link spy={true} smooth={true} to="Home">
                     <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Home</li>
                 </Link>
@@ -35,12 +35,12 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="h-10vh lg:flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
-                <div className="flex items-center flex-1 font-bold">
+            <div className="h-10vh flex justify-between z-50 text-black lg:py-5 px-20 py-4 flex-1">
+                <div className="flex lg:items-center items-start justify-start flex-1 font-bold">
                     <span className="text-2x1 font-bold text-black">Eduardo</span>
                     <span className="text-2x1 font-bold text-accent">.</span>
                 </div>
-                <div className="lg:flex md:flex lg: flex-1 items center justify-begin font-semibold hidden">
+                <div className="lg:flex md:flex lg:flex-1 items-center justify-begin font-semibold hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-1xl font-normal text-gray-900">
                             <Link spy={true} smooth={true} to="Home">
@@ -69,7 +69,7 @@ const Nav = () => {
 
                 </div>
 
-                <button className="block sm:hidden transition" onClick={handleClick}>
+                <button className="block absolute sm:hidden transition text-2xl" onClick={handleClick}>
                     {click ? <FaTimes/> : <CiMenuFries/>}
                 </button>
                 

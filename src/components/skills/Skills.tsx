@@ -10,7 +10,7 @@ const Skills = () => {
                     <h1 className="text-3xl font-light leading-11">Javascript</h1>
                     <h1 className="text-3xl font-light leading-11">Typescript</h1>
                     <h1 className="text-3xl font-light leading-11">React</h1>
-                    <h1 className="text-3xl font-light leading-11">Nestjs</h1>
+                    <h1 className="text-3xl font-light leading-11">CSS3</h1>
                     <h1 className="text-3xl font-light leading-11">Bootstrap</h1>
                     <h1 className="text-3xl font-light leading-11 mb-10">Tailwind</h1>
                 </div>

@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import img from "../../assets/eubw.jpg"
+import img from "../../assets/eufundobw.png"
 import AOS from 'aos' 
 import 'aos/dist/aos.css'
 

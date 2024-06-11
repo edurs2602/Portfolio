@@ -9,8 +9,8 @@ const Nav = () => {
     const handleClick = () => setClick(!click);
 
     const content = <>
-        <div className="lg:hidden flex relative top-16 left-0 items-end justify-between right-0 transition">
-            <ul className="text-center text-xl p-20 pt-0">
+        <div className="lg:hidden flex relative top-16 left-0 transition">
+            <ul className="text-center text-xl p-10 pt-0 pr-20">
                 <Link spy={true} smooth={true} to="Home">
                     <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Home</li>
                 </Link>
@@ -35,7 +35,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="h-10vh flex justify-between z-50 text-black lg:py-5 px-20 py-4 flex-1">
+            <div className="h-10vh flex lg:justify-between items-start justify-start text-black lg:py-5 px-5 lg:px-20 py-4 flex-1">
                 <div className="flex lg:items-center items-start justify-start flex-1 font-bold">
                     <span className="text-2x1 font-bold text-black">Eduardo</span>
                     <span className="text-2x1 font-bold text-accent">.</span>
@@ -69,7 +69,7 @@ const Nav = () => {
 
                 </div>
 
-                <button className="block absolute sm:hidden transition text-2xl" onClick={handleClick}>
+                <button className="flex sm:hidden transition text-2xl" onClick={handleClick}>
                     {click ? <FaTimes/> : <CiMenuFries/>}
                 </button>
                 

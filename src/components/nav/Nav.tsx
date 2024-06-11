@@ -2,9 +2,14 @@ import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { CiMenuFries } from "react-icons/ci"
+import { CiDark } from "react-icons/ci";
 
 
-const Nav = () => {
+type NavProps = {
+    toggleTheme: () => void;
+};
+
+const Nav = ({ toggleTheme }: NavProps) => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
@@ -12,22 +17,22 @@ const Nav = () => {
         <div className="lg:hidden flex relative top-16 left-0 transition">
             <ul className="text-center text-xl p-10 pt-0 pr-20">
                 <Link spy={true} smooth={true} to="Home">
-                    <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Home</li>
+                    <li className="my-4 py-4 dark:text-white border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Home</li>
                 </Link>
                 <Link spy={true} smooth={true} to="About">
-                    <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Sobre</li>
+                    <li className="my-4 py-4 dark:text-white border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Sobre</li>
                 </Link>
                 <Link spy={true} smooth={true} to="Exp">
-                    <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Experiencias</li>
+                    <li className="my-4 py-4 dark:text-white border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Experiencias</li>
                 </Link>
                 <Link spy={true} smooth={true} to="Projects">
-                    <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Projetos</li>
+                    <li className="my-4 py-4 dark:text-white border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Projetos</li>
                 </Link>
                 <Link spy={true} smooth={true} to="Skills">
-                    <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Skills</li>
+                    <li className="my-4 py-4 dark:text-white border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Skills</li>
                 </Link>
                 <Link spy={true} smooth={true} to="Contact">
-                    <li className="my-4 py-4 border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Contato</li>
+                    <li className="my-4 py-4 dark:text-white border-b border-zinc-800 hover:bg-zinc-800 hover:rounded">Contato</li>
                 </Link>
             </ul>
         </div>
@@ -35,16 +40,16 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="h-10vh flex lg:justify-between items-start justify-start text-black lg:py-5 px-5 lg:px-20 py-4 flex-1">
-                <div className="flex lg:items-center items-start justify-start flex-1 font-bold">
-                    <span className="text-2x1 font-bold text-black">Eduardo</span>
+            <div className="h-10vh flex lg:justify-start items-start justify-start text-black lg:py-5 px-5 lg:px-20 py-4 flex-1">
+                <div className="flex items-center justify-start flex-1 font-bold">
+                    <span className="text-2x1 font-bold text-black dark:text-white">Eduardo</span>
                     <span className="text-2x1 font-bold text-accent">.</span>
                 </div>
                 <div className="lg:flex md:flex lg:flex-1 items-center justify-begin font-semibold hidden">
                     <div className="flex-10">
-                        <ul className="flex gap-8 mr-16 text-1xl font-normal text-gray-900">
+                        <ul className="flex gap-8 mr-16 text-1xl font-normal text-gray-900 dark:text-white">
                             <Link spy={true} smooth={true} to="Home">
-                                <li className="hover:text-primary text-zinc-800 transition cursor-pointer">Home</li>
+                                <li className="hover:text-primary text-zinc-800 transition cursor-pointer ">Home</li>
                             </Link>
                             <Link spy={true} smooth={true} to="About">
                                 <li className="hover:text-primary text-zinc-800 transition cursor-pointer">Sobre</li>
@@ -69,10 +74,13 @@ const Nav = () => {
 
                 </div>
 
-                <button className="flex sm:hidden transition text-2xl" onClick={handleClick}>
+                <button className="flex sm:hidden transition text-2xl dark:text-white" onClick={handleClick}>
                     {click ? <FaTimes/> : <CiMenuFries/>}
                 </button>
                 
+                <button onClick={toggleTheme} className="text-black dark:text-white transition text-2xl">
+                    {click ? <CiDark/> : <CiDark/>}
+                </button>
             </div>
         </nav>
     );

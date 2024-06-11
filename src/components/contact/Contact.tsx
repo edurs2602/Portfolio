@@ -3,7 +3,7 @@ import { Button } from "@material-tailwind/react";
 const Contact = () => {
     return (
         <div className="h-10vh lg:flex justify-between z-50 text-white lg:py-5 lg:px-20 px-5 py-10 flex-1 gap-16">
-            <div className="h-full lg:py-20 flex flex-col lg:justify-center items-start text-black">
+            <div className="h-full lg:py-20 flex flex-col lg:justify-center items-start text-black dark:text-white">
                 <h1 data-aos="fade-right" className="text-7xl font-semibold leading-11 mb-4">Contato<span className="text-primary">.</span></h1>  
             </div>
             <div className="h-full lg:py-15 flex flex-col justify-between lg:items-start items-center text-black">

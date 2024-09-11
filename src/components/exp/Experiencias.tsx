@@ -24,7 +24,7 @@ const Exp = () => {
                         </TimelineHeader>
                         <TimelineBody className="pb-8">
                             <Typography variant="small" color="gray" className="font-normal text-gray-600 dark:text-white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                                <strong>Desenvolvedor Backend Freelancer</strong> - Desenvolvi o backend do projeto <a href="https://chasqui-tracker.vercel.app/" class="text-secondary">Chasqui Express</a> utilizando Django, Docker e PostgreSQL. Criei funcionalidades críticas e escaláveis, gerenciei ambientes com Docker e otimizei o banco de dados para desempenho e segurança.    
+                                <strong>Desenvolvedor Backend Freelancer</strong> - Desenvolvi o backend do projeto <a href="https://chasqui-tracker.vercel.app/" className="text-secondary">Chasqui Express</a> utilizando Django, Docker e PostgreSQL. Criei funcionalidades críticas e escaláveis, gerenciei ambientes com Docker e otimizei o banco de dados para desempenho e segurança.    
                             </Typography>
                         </TimelineBody>
                         </TimelineItem>

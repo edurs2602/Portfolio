@@ -11,9 +11,9 @@ const Projects = () => {
             <div className="h-full flex flex-col lg:justify-center items-start text-black dark:text-white">
                 <h1 data-aos="fade-right" className="text-7xl font-semibold leading-11 mb-7">Projetos<span className="text-primary">.</span></h1>
                 <div data-aos="fade-up" className="flex w-max gap-4">
-                    <a href="https://drive.google.com/file/d/1PtjrlwGu4uc_27bJl0Asd4k2cwUDgme6/view?usp=sharing" className="bg-secondary hover:bg-primary text-black dark:text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                    <a href="https://drive.google.com/file/d/1GntuVA9HQ8iMhnShdEJvHXXvKHs0SwYd/view?usp=sharing" className="bg-secondary hover:bg-primary text-black dark:text-white font-bold py-2 px-4 rounded inline-flex items-center">
                         <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                        <span><a href="https://drive.google.com/file/d/1PtjrlwGu4uc_27bJl0Asd4k2cwUDgme6/view?usp=sharing"></a>Download CV</span>
+                        <span><a href="https://drive.google.com/file/d/1GntuVA9HQ8iMhnShdEJvHXXvKHs0SwYd/view?usp=sharing"></a>Download CV</span>
                     </a>
                 </div>    
             </div>
